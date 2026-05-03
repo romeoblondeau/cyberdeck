@@ -1,13 +1,13 @@
 # cyberdeck
 Homelab sur Raspberry Pi 5 — infrastructure auto-hébergée sécurisée
-# 🖥️ Cyberdeck — Homelab Raspberry Pi 5
+# Cyberdeck — Homelab Raspberry Pi 5
 
 Infrastructure auto-hébergée construite et administrée dans le cadre 
 d'une reconversion vers la cybersécurité et l'administration système.
 
 ---
 
-## 🔧 Stack technique
+## Stack technique
 
 | Composant | Technologie |
 |---|---|
@@ -22,7 +22,7 @@ d'une reconversion vers la cybersécurité et l'administration système.
 
 ---
 
-## 📦 Services déployés
+## Services déployés
 
 | Service | Description |
 |---|---|
@@ -33,7 +33,7 @@ d'une reconversion vers la cybersécurité et l'administration système.
 
 ---
 
-## 🔒 Sécurité en place
+## Sécurité en place
 
 - SSH par clés uniquement — authentification par mot de passe désactivée
 - Pare-feu UFW en mode default deny
@@ -44,7 +44,7 @@ d'une reconversion vers la cybersécurité et l'administration système.
 
 ---
 
-## 📡 Architecture réseau
+## Architecture réseau
 
 - Exposition publique via nom de domaine custom
 - Reverse proxy Nginx comme unique point d'entrée
@@ -53,7 +53,7 @@ d'une reconversion vers la cybersécurité et l'administration système.
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 Ce projet est mon terrain d'entraînement pratique. 
 Chaque service déployé, chaque règle de sécurité configurée, 
