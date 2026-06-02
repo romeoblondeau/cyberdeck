@@ -1,5 +1,3 @@
-# cyberdeck
-Homelab sur Raspberry Pi 5 — infrastructure auto-hébergée sécurisée
 # Cyberdeck — Homelab Raspberry Pi 5
 
 Infrastructure auto-hébergée construite et administrée dans le cadre 
@@ -41,7 +39,8 @@ d'une reconversion vers la cybersécurité et l'administration système.
 - HTTPS via certificats Let's Encrypt
 - HTTP Basic Auth devant les services sensibles
 - Défense en profondeur — plusieurs couches indépendantes
-
+📄 **Études de cas détaillées :**
+- [Durcissement SSH : restriction à l'interface Tailscale](docs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
 ---
 
 ## Architecture réseau
