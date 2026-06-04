@@ -41,6 +41,7 @@ d'une reconversion vers la cybersécurité et l'administration système.
 - Défense en profondeur — plusieurs couches indépendantes
 📄 **Études de cas détaillées :**
 - [Durcissement SSH : restriction à l'interface Tailscale](docs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
+- [Réduction des surfaces d'attaque](docs/reduction-surface-attaque.md) — audit des logs nginx, suppression du server exposé sur internet
 ---
 
 ## Architecture réseau
