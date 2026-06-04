@@ -40,8 +40,8 @@ d'une reconversion vers la cybersécurité et l'administration système.
 - HTTP Basic Auth devant les services sensibles
 - Défense en profondeur — plusieurs couches indépendantes
 📄 **Études de cas détaillées :**
-- [Durcissement SSH : restriction à l'interface Tailscale](docs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
-- [Réduction des surfaces d'attaque](docs/reduction-surface-attaque.md) — audit des logs nginx, suppression du server exposé sur internet
+- [Durcissement SSH : restriction à l'interface Tailscale](Docs/reduction-surface-attaque.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
+- [Réduction des surfaces d'attaque](Docs/reduction-surface-attaque.md) — audit des logs nginx, suppression du server exposé sur internet
 ---
 
 ## Architecture réseau
