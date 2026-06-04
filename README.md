@@ -1,7 +1,16 @@
 # Cyberdeck — Homelab Raspberry Pi 5
 
-Infrastructure auto-hébergée construite et administrée dans le cadre 
-d'une reconversion vers la cybersécurité et l'administration système.
+Je construis une infra pour apprendre à voir ce qui s'y passe.
+Objectif : analyste SOC / technicien infrastructure sécurisée.
+
+---
+
+## Matériel
+
+| Machine | Rôle |
+|---|---|
+| Raspberry Pi 5 — 8 Go RAM, Debian 12 | Serveur principal — source de logs |
+| Dell Latitude 5420 — 16 Go RAM, Ubuntu | Poste de travail / labo d'analyse |
 
 ---
 
@@ -24,38 +33,33 @@ d'une reconversion vers la cybersécurité et l'administration système.
 
 | Service | Description |
 |---|---|
-| Filebrowser | Gestionnaire de fichiers auto-hébergé |
+| Nginx | Reverse proxy + page statique publique |
 | Glances | Monitoring système en temps réel |
-| Open WebUI / Ollama | Interface LLM local |
-| Dashy | Dashboard de navigation |
+| Maigret | OSINT |
 
 ---
 
 ## Sécurité en place
 
 - SSH par clés uniquement — authentification par mot de passe désactivée
+- SSH restreint à l'interface Tailscale uniquement
 - Pare-feu UFW en mode default deny
-- Fail2Ban actif sur SSH, Nginx et Filebrowser
+- Fail2Ban actif sur SSH et Nginx
 - HTTPS via certificats Let's Encrypt
-- HTTP Basic Auth devant les services sensibles
 - Défense en profondeur — plusieurs couches indépendantes
-📄 **Études de cas détaillées :**
-- [Durcissement SSH : restriction à l'interface Tailscale](Docs/reduction-surface-attaque.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
-- [Réduction des surfaces d'attaque](Docs/reduction-surface-attaque.md) — audit des logs nginx, suppression du server exposé sur internet
+
+---
+
+## Études de cas
+
+- [Durcissement SSH : restriction à l'interface Tailscale](Docs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
+- [Réduction de surface d'attaque](Docs/reduction-surface-attaque.md) — audit des logs Nginx, suppression des services exposés inutilement
+
 ---
 
 ## Architecture réseau
 
-- Exposition publique via nom de domaine custom
+- Page publique sur domaine custom `bdwlf-cyberdeck.xyz`
 - Reverse proxy Nginx comme unique point d'entrée
-- Accès distant sécurisé via VPN Mesh Tailscale
+- Accès distant sécurisé via VPN mesh Tailscale
 - Conteneurs isolés sur réseau Docker dédié
-
----
-
-## Objectif
-
-Ce projet est mon terrain d'entraînement pratique. 
-Chaque service déployé, chaque règle de sécurité configurée, 
-chaque log analysé fait partie d'une formation autodidacte 
-vers un poste de Technicien Infrastructure Sécurisée.
