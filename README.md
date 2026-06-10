@@ -51,11 +51,11 @@ Objectif : analyste SOC / technicien infrastructure sécurisée.
 ---
 
 ## Études de cas
-
-- [Durcissement SSH : restriction à l'interface Tailscale](Docs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
-- [Réduction de surface d'attaque](Docs/reduction-surface-attaque.md) — audit des logs Nginx, suppression des services exposés inutilement
-- [Analyse des logs Nginx : reconnaître le bruit du signal](Docs/analyse-logs-nginx.md) — identification de comportements suspects sur le trafic entrant
-- [Analyse des logs Nginx : patterns de scan et investigation d'IP](Docs/analyse-logs-nginx-patterns.md) — awk/sort/uniq sur 111k lignes, investigation de scanners industriels
+- [Durcissement SSH : restriction à l'interface Tailscale](docs/configs/hardening-ssh-tailscale.md) — audit du pare-feu, test d'exposition depuis l'extérieur, application du moindre privilège sans lockout
+- [Réduction de surface d'attaque](docs/configs/reduction-surface-attaque.md) — audit des logs Nginx, suppression des services exposés inutilement
+- [Déploiement de Cowrie : honeypot SSH](docs/configs/deploiement-cowrie-honeypot.md) — conteneurisation, résolution du problème de permissions, premier test de capture
+- [Analyse des logs Nginx : reconnaître le bruit du signal](docs/analyses/analyse-logs-nginx.md) — identification de comportements suspects sur le trafic entrant
+- [Analyse des logs Nginx : patterns de scan et investigation d'IP](docs/analyses/analyse-logs-nginx-patterns.md) — awk/sort/uniq sur 111k lignes, investigation de scanners industriels
 ---
 
 ## Architecture réseau
