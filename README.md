@@ -56,6 +56,7 @@ Objectif : analyste SOC / technicien infrastructure sécurisée.
 - [Déploiement de Cowrie : honeypot SSH](docs/configs/deploiement-cowrie-honeypot.md) — conteneurisation, résolution du problème de permissions, premier test de capture
 - [Analyse des logs Nginx : reconnaître le bruit du signal](docs/analyses/analyse-logs-nginx.md) — identification de comportements suspects sur le trafic entrant
 - [Analyse des logs Nginx : patterns de scan et investigation d'IP](docs/analyses/analyse-logs-nginx-patterns.md) — awk/sort/uniq sur 111k lignes, investigation de scanners industriels
+- [Cowrie — Premières 24h : reconnaissance, brute force et post-intrusion](docs/analyses/cowrie-analyse-24h.md) — keyscan, admin/admin, tentative de dépôt de clean.sh
 ---
 
 ## Architecture réseau
