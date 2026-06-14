@@ -57,7 +57,7 @@ Objectif : analyste SOC / technicien infrastructure sécurisée.
 - [Analyse des logs Nginx : reconnaître le bruit du signal](docs/analyses/analyse-logs-nginx.md) — identification de comportements suspects sur le trafic entrant
 - [Analyse des logs Nginx : patterns de scan et investigation d'IP](docs/analyses/analyse-logs-nginx-patterns.md) — awk/sort/uniq sur 111k lignes, investigation de scanners industriels
 - [Cowrie — Premières 24h : reconnaissance, brute force et post-intrusion](docs/analyses/cowrie-analyse-24h.md) — keyscan, admin/admin, tentative de dépôt de clean.sh
-- [Centralisation des logs : pipeline Promtail → Loki → Grafana](doc/analyse/centralisation-logs-promtail-loki-grafana.md) — bind mount Nginx, scraping Docker via socket, résolution des conflits de permissions et de l'incompatibilité UFW/iptables
+- [Centralisation des logs : pipeline Promtail → Loki → Grafana](docs/analyse/centralisation-logs-promtail-loki-grafana.md) — bind mount Nginx, scraping Docker via socket, résolution des conflits de permissions et de l'incompatibilité UFW/iptables
 ---
 
 ## Architecture réseau
