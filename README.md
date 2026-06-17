@@ -58,6 +58,7 @@ Objectif : analyste SOC / technicien infrastructure sécurisée.
 - [Analyse des logs Nginx : patterns de scan et investigation d'IP](docs/analyses/analyse-logs-nginx-patterns.md) — awk/sort/uniq sur 111k lignes, investigation de scanners industriels
 - [Cowrie — Premières 24h : reconnaissance, brute force et post-intrusion](docs/analyses/cowrie-analyse-24h.md) — keyscan, admin/admin, tentative de dépôt de clean.sh
 - [Centralisation des logs : pipeline Promtail → Loki → Grafana](docs/configs/centralisation-logs-promtail-loki-grafana.md) — bind mount Nginx, scraping Docker via socket, résolution des conflits de permissions et de l'incompatibilité UFW/iptables
+- [Dashboard Grafana SOC](docs/configs/configuration-dashboard.md) — panels logs bruts et top IPs pour Nginx et Cowrie, extraction de champs avec `| pattern` en LogQL, transformations Reduce et Sort by
 ---
 
 ## Architecture réseau
