@@ -59,6 +59,7 @@ Objectif : analyste SOC / technicien infrastructure sécurisée.
 - [Cowrie — Premières 24h : reconnaissance, brute force et post-intrusion](docs/analyses/cowrie-analyse-24h.md) — keyscan, admin/admin, tentative de dépôt de clean.sh
 - [Centralisation des logs : pipeline Promtail → Loki → Grafana](docs/configs/centralisation-logs-promtail-loki-grafana.md) — bind mount Nginx, scraping Docker via socket, résolution des conflits de permissions et de l'incompatibilité UFW/iptables
 - [Dashboard Grafana SOC](docs/configs/dashboard-grafana-soc.md) — panels logs bruts et top IPs pour Nginx et Cowrie, extraction de champs avec `| pattern` en LogQL, transformations Reduce et Sort by
+- [Script d'investigation IP](docs/configs/investigate-ip-script.md) — automatisation de l'analyse d'IP suspectes via AbuseIPDB, whois et Shodan, stockage sécurisé de la clé API
 ---
 
 ## Architecture réseau
